@@ -41,7 +41,7 @@ function App() {
               <ParallaxItemItem3 in={{ "opacity": "0", "left": "-15px", "transform": "scaleX(1.25)" }} out={{ "opacity": "1", "left": "0px", "transform": "scaleX(1)", "ease": "Power4.easeOut" }} />
             </div>
             <div className="half-w">
-              <ParallaxItemItem4 in={{ "opacity": "0", "left": "15px", "transform": "scaleX(1.25)" }} out={{ "opacity": "1", "left": "0px", "transform": "scaleX(1)", "transition-delay": "0.15s", "ease": "Power4.easeOut" }} />
+              <ParallaxItemItem4 in={{ "opacity": "0", "left": "15px", "transform": "scaleX(1.25)" }} out={{ "opacity": "1", "left": "0px", "transform": "scaleX(1)", "transitionDelay": "0.15s", "ease": "Power4.easeOut" }} />
             </div>
           </div>
           <div>
@@ -54,10 +54,10 @@ function App() {
                 <ParallaxItemItem5 in={{ "opacity": "0", "top": "15px", "transform": "scaleY(1.25)" }} out={{ "opacity": "1", "top": "0", "transform": "scaleY(1)", "ease": "Power4.easeOut" }} />
               </li>
               <li>
-                <ParallaxItemItem6 in={{ "opacity": "0", "top": "15px", "transition-delay": "0.15s", "transform": "scaleY(1.25)" }} out={{ "opacity": "1", "y": "0px", "transform": "scaleY(1)", "transition-delay": "0.15s", "ease": "Power4.easeOut" }} />
+                <ParallaxItemItem6 in={{ "opacity": "0", "top": "15px", "transitionDelay": "0.15s", "transform": "scaleY(1.25)" }} out={{ "opacity": "1", "y": "0px", "transform": "scaleY(1)", "transitionDelay": "0.15s", "ease": "Power4.easeOut" }} />
               </li>
               <li>
-                <ParallaxItemItem7 in={{ "opacity": "0", "top": "15px", "transition-delay": "0.3s", "transform": "scaleY(1.25)" }} out={{ "opacity": "1", "y": "0px", "transform": "scaleY(1)", "transition-delay": "0.3s", "ease": "Power4.easeOut" }} />
+                <ParallaxItemItem7 in={{ "opacity": "0", "top": "15px", "transitionDelay": "0.3s", "transform": "scaleY(1.25)" }} out={{ "opacity": "1", "y": "0px", "transform": "scaleY(1)", "transitionDelay": "0.3s", "ease": "Power4.easeOut" }} />
               </li>
             </ul>
           </div>

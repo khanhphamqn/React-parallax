@@ -13,29 +13,20 @@ class Parallax extends Component {
   constructor(props){
     super(props);
     this.state = {
-      items: [],
-      color: this.props.color
+      items: []
     }
     this.register = this.register.bind(this);
-    this.changeColor = this.changeColor.bind(this);
     this.onScroll = this.onScroll.bind(this);
   }
   static childContextTypes = {
-    color: PropTypes.string,
     register: PropTypes.func,
     changeColor: PropTypes.func,
   };
   getChildContext() {
     return {
-      color: this.state.color,
       register: this.register,
       changeColor: this.changeColor,
     };
-  }
-  changeColor(color){
-    this.setState({
-      color: color
-    })
   }
   register(item){
     this.setState(({ items }) => ({

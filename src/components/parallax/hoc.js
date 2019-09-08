@@ -12,7 +12,6 @@ const ParallaxItem = (WrappedComponent) => {
       }
     }
     static contextTypes = {
-      color: PropTypes.string,
       in: PropTypes.object,
       register: PropTypes.func,
       changeColor: PropTypes.func,
@@ -20,14 +19,12 @@ const ParallaxItem = (WrappedComponent) => {
     componentDidMount(){
       this.context.register({
         el: this.item,
-        color: this.context.color,
         in: this.props.in,
         out: this.props.out,
         change: this.changeStyle
       })
     }
     changeStyle(style){
-      console.log(style)
       this.setState({
         style: style
       })
